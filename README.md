@@ -2,7 +2,7 @@
 
 A dynamic and interactive web app to **flip, like, and organize BTS photocards**, allowing fans (ARMY!) to view, sort, filter by member, and like or dislike the card.
 
-🌐 **Live Demo**: [https://bts-photocard.vercel.app](https://bts-photocard.vercel.app)
+🌐 **Live Demo**: [https://bts-photocard.vercel.app](https://bts-photocard.vercel.app/)
 
 ---
 
