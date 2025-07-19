@@ -27,3 +27,10 @@ A dynamic and interactive web app to **flip, like, and organize BTS photocards**
 
 ---
 
+## 🛠️ Built With
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
+
+---
