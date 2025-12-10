@@ -4,7 +4,7 @@ A dynamic web app to flip, like, and organize BTS photocards. Built with HTML, C
 
 ## Live Demo
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/SakshiB2003/bts-photocard)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-007ACC?style=for-the-badge&logo=google-chrome&logoColor=white)](https://bts-photocard.vercel.app/)
 
 ## Features
 - 🔄 Flip cards front/back
