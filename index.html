@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photocard Collection</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="start">
+            <div class="logo-title">
+                <img src="images/logo.jpg" alt="BTS logo">
+                <h1>BTS Photocard Collection</h1>
+            </div>
+            <div class="start-btn">
+                <button type="button" class="btn">View All</button>
+                <button type="button" class="btn">Favorites</button>
+                <button type="button" class="btn">Shuffle</button>
+            </div>
+        </div>
+    </header>
+
+    <button class="mode-switch">
+        <span id="mode-icon">🌙</span>
+    </button>
+
+    <div class="member-box">
+        <div class="member">
+            <h2>Your Collection</h2>
+            <div class="member-name">
+                <span>Filter by member:</span>
+                <button class="name-btn" id="showAll">All</button>
+                <button class="name-btn" data-member="jin">Jin</button>
+                <button class="name-btn" data-member="suga">Suga</button>
+                <button class="name-btn" data-member="j-hope">J-Hope</button>
+                <button class="name-btn" data-member="rm">RM</button>
+                <button class="name-btn" data-member="jimin">Jimin</button>
+                <button class="name-btn" data-member="v">V</button>
+                <button class="name-btn" data-member="jungkook">Jungkook</button>
+            </div>
+            <div class="sort">
+                <span>Sort by: </span>
+                <select name="sort" id="sort-select">
+                    <option value="all">All</option>
+                    <option value="newest first">Newest First</option>
+                    <option value="oldest first">Oldest First</option>
+                    <option value="rarity">Rarity</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="photocard"> 
+
+        <div class="flip-container" data-member="jungkook">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-1" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jungkook.jpeg" alt="BTS" class="card-img">
+                    <h3>Jungkook</h3>
+                    <h5>Golden (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-1" class="like-checkbox">
+                    <label for="like-toggle-1" class="like-label">&#10084;</label>
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>💛 Jeon Jungkook</h4>
+                    <p><strong>Album:</strong> Golden (2023)</p>
+                    <p><em>"I'm still standing here, more golden than ever."</em></p>
+                    <p>🌈 Limited Edition: Shine Ver. – Gloss Finish</p>
+                    <p><strong>Track highlight:</strong> “Standing Next to You” 🎶</p>
+                    <p><strong>Rarity:</strong> ★★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-1" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="j-hope">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-2" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jhope1.jpg" alt="BTS" class="card-img">
+                    <h3>J-Hope</h3>
+                    <h5>Jack In The Box (2022)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-2" class="like-checkbox">
+                    <label for="like-toggle-2" class="like-label">&#10084;</label>
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🌟 Jung Hoseok</h4>
+                    <p><strong>Album:</strong> Jack in the Box</p>
+                    <p><em>"Every day I pray, I don’t fade away."</em></p>
+                    <p>🎭 Edition: Hope Edition</p>
+                    <p><strong>Track highlight:</strong> “MORE”</p>
+                    <p><strong>Rarity:</strong> ★ Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-2" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="jimin">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-3" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jimin1.jpg" alt="BTS" class="card-img">
+                    <h3>Jimin</h3>
+                    <h5>Face (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-3" class="like-checkbox">
+                    <label for="like-toggle-3" class="like-label">&#10084;</label>
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>💖 Park Jimin</h4>
+                    <p><strong>Album:</strong> FACE (2023)</p>
+                    <p><em>"I'm here with you and I'm your light."</em></p>
+                    <p>🌫️ Edition: Mist Ver.</p>
+                    <p><strong>Track highlight:</strong> “Like Crazy” ✨</p>
+                    <p><strong>Rarity:</strong> ★ ★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-3" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="jin">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-4" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/seokjin gq.jpg" alt="BTS" class="card-img">
+                    <h3>Jin</h3>
+                    <h5>The Astronaut (2022)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-4" class="like-checkbox">
+                    <label for="like-toggle-4" class="like-label">&#10084;</label>
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>💜 Kim Seokjin</h4>
+                    <p><strong>Album:</strong> The Astronaut (2022)</p>
+                    <p><em>"When I'm with you, there's no one else."</em></p>
+                    <p>🚀 Limited Edition: Galaxy Ver.</p>
+                    <p><strong>Track highlight:</strong> “The Astronaut” 🌌</p>
+                    <p><strong>Rarity:</strong> ★ Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-4" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="rm">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-5" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/Rm.jpg" alt="BTS" class="card-img">
+                    <h3>RM</h3>
+                    <h5>Indigo (2022)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-5" class="like-checkbox">
+                    <label for="like-toggle-5" class="like-label">&#10084;</label>
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🌌 Kim Namjoon</h4>
+                    <p><strong>Album:</strong> Indigo (2022)</p>
+                    <p><em>"The blue in me is you."</em></p>
+                    <p>🖼️ Edition: Artbook Ver.</p>
+                    <p><strong>Track highlight:</strong> “Wild Flower” 🌸</p>
+                    <p><strong>Rarity:</strong> ★★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-5" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container"  data-member="suga">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-6" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/suga.jpg" alt="BTS" class="card-img">
+                    <h3>Suga</h3>
+                    <h5>D-Day (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-6" class="like-checkbox">
+                    <label for="like-toggle-6" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🔥 Min Yoongi</h4>
+                    <p><strong>Album:</strong> D-DAY (Agust D)</p>
+                    <p><em>"Even if I fall again, I’ll rise up again."</em></p>
+                    <p>⚔️ Edition: Revolution Ver.</p>
+                    <p><strong>Track highlight:</strong> “Haegeum”</p>
+                    <p><strong>Rarity:</strong> ★★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-6" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="v">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-7" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/v1.jpg" alt="BTS" class="card-img">
+                    <h3>V</h3>
+                    <h5>Layover (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-7" class="like-checkbox">
+                    <label for="like-toggle-7" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🎩 Kim Taehyung</h4>
+                    <p><strong>Album:</strong> Layover (2023)</p>
+                    <p><em>"I'll stay by your side through the night."</em></p>
+                    <p>🛏️ Edition: Cozy Ver.</p>
+                    <p><strong>Track highlight:</strong> “Love Me Again” 🎙️</p>
+                    <p><strong>Rarity:</strong> ★ Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-7" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="j-hope">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-8" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/JHope2.jpg" alt="BTS" class="card-img">
+                    <h3>J-Hope</h3>
+                    <h5>Proof (2022)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-8" class="like-checkbox">
+                    <label for="like-toggle-8" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>💜 OT7 Forever</h4>
+                    <p><strong>Album:</strong> Proof (Anthology)</p>
+                    <p><em>"We are bulletproof."</em></p>
+                    <p>📀 Edition: Standard Ver.</p>
+                    <p><strong>Track highlight:</strong> “Yet To Come”</p>
+                    <p><strong>Rarity:</strong> ★★★ Legendary</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-8" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="jungkook">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-9" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jk1.jpeg" alt="BTS" class="card-img">
+                    <h3>Jungkook</h3>
+                    <h5>Golden - Midnight (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-9" class="like-checkbox">
+                    <label for="like-toggle-9" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🌙 Jungkook</h4>
+                    <p><strong>Edition:</strong> Midnight Ver.</p>
+                    <p><em>"I was lost in the dark but found light in you."</em></p>
+                    <p><strong>Track highlight:</strong> “3D”</p>
+                    <p><strong>Rarity:</strong> ★ Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-9" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="jin">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-10" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jin1.jpg" alt="BTS" class="card-img">
+                    <h3>Jin</h3>
+                    <h5>Map of the Soul: 7 (2020)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-10" class="like-checkbox">
+                    <label for="like-toggle-10" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>💫 Jin</h4>
+                    <p><strong>Edition:</strong> Eternal Ver.</p>
+                    <p><em>"The moon in my sky."</em></p>
+                    <p><strong>Track highlight:</strong> “Moon”</p>
+                    <p><strong>Rarity:</strong> ★★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-10" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="jimin">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-11" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jimin2.jpg" alt="BTS" class="card-img">
+                    <h3>Jimin</h3>
+                    <h5>Face - Blackout (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-11" class="like-checkbox">
+                    <label for="like-toggle-11" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🖤 Jimin</h4>
+                    <p><strong>Edition:</strong> Blackout Ver.</p>
+                    <p><em>"You are the cause of my euphoria."</em></p>
+                    <p><strong>Track highlight:</strong> “Set Me Free Pt.2”</p>
+                    <p><strong>Rarity:</strong> ★★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-11" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="rm">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-12" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/rm1.jpg" alt="BTS" class="card-img">
+                    <h3>RM</h3>
+                    <h5>Dynamite (2020)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-12" class="like-checkbox">
+                    <label for="like-toggle-12" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                     <h4>💥 Disco RM</h4>
+                    <p><strong>Edition:</strong> Retro Ver.</p>
+                    <p><em>"Shoes on, get up in the morn’."</em></p>
+                    <p><strong>Track highlight:</strong> “Dynamite”</p>
+                    <p><strong>Rarity:</strong> ★ Common</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-12" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="suga">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-13" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/suga1.jpg" alt="BTS" class="card-img">
+                    <h3>Suga</h3>
+                    <h5>Run BTS Era (2022)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-13" class="like-checkbox">
+                    <label for="like-toggle-13" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🏃‍♂️ Run SUGA</h4>
+                    <p><strong>Edition:</strong> Unstoppable Ver.</p>
+                    <p><em>"We were only seven."</em></p>
+                    <p><strong>Track highlight:</strong> “Run BTS”</p>
+                    <p><strong>Rarity:</strong> ★★★ Legendary</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-13" class="flip-label"></label>
+        </div>
+
+        <div class="flip-container" data-member="v">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-14" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/v2.jpg" alt="BTS" class="card-img">
+                    <h3>V</h3>
+                    <h5>Layover - Winter (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-14" class="like-checkbox">
+                    <label for="like-toggle-14" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🧣 V – Cozy Mood</h4>
+                    <p><strong>Edition:</strong> Winter Ver.</p>
+                    <p><em>"You and I, we’re like a warm snow."</em></p>
+                    <p><strong>Track highlight:</strong> “Blue”</p>
+                    <p><strong>Rarity:</strong> ★ Common</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-14" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="jin">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-15" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jin2.jpg" alt="BTS" class="card-img">
+                    <h3>Jin</h3>
+                    <h5>The Astronaut – Echo Ver. (2024)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-15" class="like-checkbox">
+                    <label for="like-toggle-15" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🌠 Kim Seokjin</h4>
+                    <p><strong>Album:</strong> The Astronaut – Echo Version (2024)</p>
+                    <p><em>"Though far away, my voice will find you – like an echo in space."</em></p>
+                    <p>🔭 Edition: Lunar Glow Ver. – Soft Matte</p>
+                    <p><strong>Track Highlight:</strong> “The Astronaut (Echo Mix)” 🎧</p>
+                    <p><strong>Rarity:</strong> ★★★★★ (Ultra Rare)</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-15" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="j-hope">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-16" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jhope3.jpg" alt="BTS" class="card-img">
+                    <h3>J-Hope</h3>
+                    <h5>Jack in the Box – Hope Ed. (2023)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-16" class="like-checkbox">
+                    <label for="like-toggle-16" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🔥 Jung Hoseok</h4>
+                    <p><strong>Album:</strong> Jack in the Box – Hope Edition (2023)</p>
+                    <p><em>"Every step defines me, every fear refines me."</em></p>
+                    <p>🪩 Edition: Streetlight Ver. – Matte Foil</p>
+                    <p><strong>Track Highlight:</strong> “Arson” 🔥</p>
+                    <p><strong>Rarity:</strong> ★★★★★ (Legendary)</p>
+
+                    <input type="checkbox" id="like-toggle-16" class="like-checkbox">
+                    <label for="like-toggle-16" class="like-label">&#10084;</label>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-16" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="jimin">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-17" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jimin3.jpg" alt="BTS" class="card-img">
+                    <h3>Jimin</h3>
+                    <h5>Butter (2021)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-17" class="like-checkbox">
+                    <label for="like-toggle-17" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🧈 Butter Jimin</h4>
+                    <p><strong>Edition:</strong> Cream Ver.</p>
+                    <p><em>"Cool shade stunner, yeah I owe it all to my mother."</em></p>
+                    <p><strong>Track highlight:</strong> “Butter”</p>
+                    <p><strong>Rarity:</strong> ★★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-17" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="jungkook">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-18" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/jk2.jpeg" alt="BTS" class="card-img">
+                    <h3>Jungkook</h3>
+                    <h5>School Love Affair (2014)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-18" class="like-checkbox">
+                    <label for="like-toggle-18" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>📘 Schoolboy JK</h4>
+                    <p><strong>Edition:</strong> Classic Ver.</p>
+                    <p><em>"Boy in Luv, girl in mind."</em></p>
+                    <p><strong>Track highlight:</strong> “Boy In Luv”</p>
+                    <p><strong>Rarity:</strong> ★ Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-18" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="rm">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-19" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/rm3.jpg" alt="BTS" class="card-img">
+                    <h3>RM</h3>
+                    <h5>Indigo (2022)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-19" class="like-checkbox">
+                    <label for="like-toggle-19" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>📘 Kim Namjoon</h4>
+                    <p><strong>Album:</strong> Indigo (2022)</p>
+                    <p><em>"This color, this scent, this moment – I belong here."</em></p>
+                    <p>🎨 Edition: Indigo Blue – Canvas Finish</p>
+                    <p><strong>Track Highlight:</strong> “Still Life” 🎶</p>
+                    <p><strong>Rarity:</strong> ★★★★☆ (Rare)</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-19" class="flip-label"></label>
+        </div>
+
+
+        <div class="flip-container" data-member="v">
+            <!-- Flip trigger -->
+            <input type="checkbox" id="flip-toggle-20" class="flip-checkbox">
+
+            <!-- Card inner content -->
+            <div class="card-flip">
+                <!-- Front side -->
+                <div class="card-front">
+                    <img src="images/v3.jpg" alt="BTS" class="card-img">
+                    <h3>V</h3>
+                    <h5>Map of the Soul: 7 (2020)</h5>
+
+                    <!-- Like button -->
+                    <input type="checkbox" id="like-toggle-20" class="like-checkbox">
+                    <label for="like-toggle-20" class="like-label">&#10084;</label>
+
+                </div>
+
+                <!-- Back side -->
+                <div class="card-back">
+                    <h4>🔮 MOTS V</h4>
+                    <p><strong>Edition:</strong> Shadow Ver.</p>
+                    <p><em>"Can you hear me?"</em></p>
+                    <p><strong>Track highlight:</strong> “Inner Child”</p>
+                    <p><strong>Rarity:</strong> ★★ Ultra Rare</p>
+                </div>
+            </div>
+
+            <!-- Label overlay for flip toggle -->
+            <label for="flip-toggle-20" class="flip-label"></label>
+        </div>
+      
+
+    </div>
+
+
+    <footer class="panel">
+        <div class="text-panel">
+            <div class="text">
+                <div class="text-1">
+                    <h3>BTS Photocard Collection</h3>
+                    <p>Track, trade, and showcase your BTS photocards</p>
+                </div>
+                <div class="text-2">
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+
+                </div>
+
+                
+            </div>
+
+
+            <div class="copyright">
+                <p>💜 Made with love for ARMY 💜</p>
+                <h5>© 2025 Sakshi Bajpai</h5>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
